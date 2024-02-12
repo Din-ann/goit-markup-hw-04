@@ -111,7 +111,7 @@ button {
   color: #404bbf;
 }
 
-.header-link:hover::after {
+.main:active::after {
   content: "";
   border-radius: 2px;
   width: 100%;
@@ -270,8 +270,6 @@ button {
   background: var(--CLOUD, #f4f4fd);
   padding-top: 120px;
   padding-bottom: 120px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -292,6 +290,8 @@ button {
   background: var(--WHITE, #fff);
   border-radius: 0 0 4px 4px;
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-item-pic {
   display: block;
@@ -333,6 +333,7 @@ button {
 .icon-item {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link {
@@ -345,8 +346,11 @@ button {
   justify-content: center;
 }
 
-.icon-link:hover,
-icon-link:focus {
+.icon-link:hover {
+  background-color: #404bbf;
+}
+
+.icon-link:focus {
   background-color: #404bbf;
 }
 
@@ -397,6 +401,7 @@ icon-link:focus {
   position: absolute;
   top: 0;
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   padding: 40px 32px;
@@ -447,6 +452,10 @@ icon-link:focus {
   display: flex;
   align-items: baseline;
   margin-right: 120px;
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .footer-logo {
@@ -476,7 +485,7 @@ icon-link:focus {
 .social-media {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
