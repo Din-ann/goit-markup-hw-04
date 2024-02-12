@@ -505,7 +505,7 @@ button {
   fill: #f4f4fd;
 }
 
-.icon-link:focus,
-.icon-link:hover {
+.footer-icon-link:focus,
+.footer-icon-link:hover {
   background-color: #31d0aa;
 }
