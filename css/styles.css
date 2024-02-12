@@ -107,7 +107,12 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav .header-link:active::after {
+.header-link.current {
+  color: #404bbf;
+  position: relative;
+}
+
+.header-link.current::after {
   content: "";
   border-radius: 2px;
   width: 100%;
@@ -134,7 +139,7 @@ button {
 }
 
 .address-link {
-  color: var(--SLATE, #434455);
+  color: #434455;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
